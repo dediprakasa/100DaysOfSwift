@@ -1,7 +1,9 @@
-//: [Previous](@previous)
-
 import Foundation
 
-var str = "Hello, playground"
+let date = Calendar.current.date(byAdding: .weekOfYear, value: 1, to: Date())
+let formatter = DateFormatter()
 
-//: [Next](@next)
+formatter.dateFormat = "dd-MM-yyyy"
+let result = formatter.string(from: date ?? Date())
+
+print(result)
