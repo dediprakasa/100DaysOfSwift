@@ -37,3 +37,29 @@ let set = Set([obj, obj2])
 //let set2 = Set([room, room2])
 
 print(set.count)
+
+enum Inam {
+    case ahoy
+    case wadaw
+    case coding(platform: Int)
+}
+
+let iosDev = Inam.coding(platform: 1)
+
+print(Inam.ahoy)
+
+
+switch iosDev {
+case .coding(let platform) where platform > 1:
+    print("aaa")
+case .ahoy, .wadaw, .coding:
+    print("idk")
+}
+
+enum Platform {
+    static let ios = "iOS"
+    static let android = "Android"
+    static let web = "Web"
+}
+
+print(Platform.android)
