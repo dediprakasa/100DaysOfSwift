@@ -20,3 +20,19 @@ func validateStudent(name: String?, batch: Int?) {
 
 validateStudent(name: dedi.name, batch: dedi.batch)
 validateStudent(name: "", batch: 0)
+
+// ---------------------------------
+
+let gpa = 3.45
+
+if (0..<1).contains(gpa) {
+  print("E")
+} else if (1..<2).contains(gpa) {
+  print("D")
+} else if (2..<3).contains(gpa) {
+  print("C")
+} else if (3..<3.7).contains(gpa) {
+  print("B")
+} else {
+  print("A")
+}
