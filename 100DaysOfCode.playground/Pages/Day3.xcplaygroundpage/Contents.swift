@@ -22,6 +22,7 @@ validateStudent(name: dedi.name, batch: dedi.batch)
 validateStudent(name: "", batch: 0)
 
 // ---------------------------------
+// Matching ranges
 
 let gpa = 3.45
 
@@ -35,4 +36,22 @@ if (0..<1).contains(gpa) {
   print("B")
 } else {
   print("A")
+}
+
+// ----------------------------------
+// Matching enums and associated values
+
+let target = Platform.desktop(os: "macOS")
+
+switch target {
+  case .mobile(let os):
+    print("mobile: \(os)")
+  case .web:
+    print("freedom!")
+  case .desktop(let os) where os == "macOS":
+    print("Big Sur for sure")
+  case .desktop(let os) where os == "Windows 10":
+    print("WSL on the rescue!")
+  default:
+    print("Are you using Symbian?")
 }
