@@ -40,6 +40,11 @@ if (0..<1).contains(gpa) {
 
 // ----------------------------------
 // Matching enums and associated values
+enum Platform {
+    case mobile(os: String)
+    case web
+    case desktop(os: String)
+}
 
 let target = Platform.desktop(os: "macOS")
 
