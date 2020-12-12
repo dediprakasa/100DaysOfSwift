@@ -26,3 +26,14 @@ do {
 } catch {
     print(error)
 }
+
+var number = 10
+
+func changeNumberByRef(for number: inout Int) {
+    number = number * 10
+}
+
+changeNumberByRef(for: &number)
+
+print(number, "<<<")
+
