@@ -33,3 +33,6 @@ let name2 = Ibra(heyho: "Wooow")
 let name3 = Ibra()
 
 print(name1, name2, name3)
+
+let num = Int.random(in: 1...4)
+print(num)
