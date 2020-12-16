@@ -1,7 +1,17 @@
-//: [Previous](@previous)
-
 import Foundation
 
-var str = "Hello, playground"
+struct Ibrahimovic {
+    private var dna: String
+    
+    init(dna: String) {
+        self.dna = dna
+    }
+    
+    func identify() -> String {
+        return "Confirmed a lion"
+    }
+}
 
-//: [Next](@next)
+let ibra = Ibrahimovic(dna: "cat")
+
+print(ibra.identify())
