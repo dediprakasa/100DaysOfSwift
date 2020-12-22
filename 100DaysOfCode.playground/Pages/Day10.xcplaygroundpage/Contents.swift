@@ -1,7 +1,17 @@
-//: [Previous](@previous)
-
 import Foundation
 
-var str = "Hello, playground"
+class Player {
+  var name = "Pogba"
 
-//: [Next](@next)
+  init() {
+    print("\(name) <<<<")
+  }
+
+  deinit {
+    print("\(name) whattt!!")
+  }
+}
+
+for _ in 0..<3 {
+  let _ = Player()
+}
