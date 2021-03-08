@@ -37,3 +37,16 @@ extension BinaryInteger {
 
 let sample = 123
 print(sample.clamp(low: 100, high: 110))
+
+var runCount = 0
+var time: Float = 30
+var elapsedTime: Float = 0
+
+Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
+    elapsedTime += 0.01
+    print(elapsedTime)
+            if elapsedTime >= time {
+                timer.invalidate()
+
+            }
+}
