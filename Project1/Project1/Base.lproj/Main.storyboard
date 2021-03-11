@@ -17,15 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" textLabel="vlc-hI-mIl" style="IBUITableViewCellStyleDefault" id="fCA-sF-UjR">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Picture" textLabel="vlc-hI-mIl" style="IBUITableViewCellStyleDefault" id="fCA-sF-UjR">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fCA-sF-UjR" id="VTc-7K-tlf">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vlc-hI-mIl">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -61,10 +61,10 @@
                         <viewLayoutGuide key="safeArea" id="XDE-vj-rwn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vPQ-fq-VJf" firstAttribute="centerY" secondItem="1Vo-p6-NxO" secondAttribute="centerY" id="0x3-Zw-u8u"/>
-                            <constraint firstItem="vPQ-fq-VJf" firstAttribute="centerX" secondItem="1Vo-p6-NxO" secondAttribute="centerX" id="BcJ-WR-ndc"/>
-                            <constraint firstItem="vPQ-fq-VJf" firstAttribute="top" secondItem="1Vo-p6-NxO" secondAttribute="topMargin" constant="-44" id="QdD-CG-Zzq"/>
-                            <constraint firstItem="vPQ-fq-VJf" firstAttribute="leading" secondItem="XDE-vj-rwn" secondAttribute="leading" id="dTe-8h-rC6"/>
+                            <constraint firstItem="vPQ-fq-VJf" firstAttribute="trailing" secondItem="XDE-vj-rwn" secondAttribute="trailing" id="4mI-Pd-jIP"/>
+                            <constraint firstAttribute="bottom" secondItem="vPQ-fq-VJf" secondAttribute="bottom" id="JbQ-OL-6MM"/>
+                            <constraint firstItem="vPQ-fq-VJf" firstAttribute="top" secondItem="1Vo-p6-NxO" secondAttribute="top" id="iWk-Xi-sCE"/>
+                            <constraint firstItem="vPQ-fq-VJf" firstAttribute="leading" secondItem="XDE-vj-rwn" secondAttribute="leading" id="wVy-Jm-jOi"/>
                         </constraints>
                     </view>
                     <connections>
