@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FPe-TE-9E4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI9-yQ-YPV" userLabel="Button2">
+                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6u-o6-goU" userLabel="Button3">
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKt-dY-5dq" userLabel="Button1">
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y6u-o6-goU" firstAttribute="top" secondItem="lI9-yQ-YPV" secondAttribute="bottom" constant="30" id="7zh-it-hhI"/>
+                            <constraint firstItem="iKt-dY-5dq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Oer-DJ-snp"/>
+                            <constraint firstItem="iKt-dY-5dq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XZj-0R-TZt"/>
+                            <constraint firstItem="Y6u-o6-goU" firstAttribute="centerX" secondItem="lI9-yQ-YPV" secondAttribute="centerX" id="cRs-Bq-FsC"/>
+                            <constraint firstItem="lI9-yQ-YPV" firstAttribute="centerX" secondItem="iKt-dY-5dq" secondAttribute="centerX" id="gHK-lQ-0gY"/>
+                            <constraint firstItem="lI9-yQ-YPV" firstAttribute="top" secondItem="iKt-dY-5dq" secondAttribute="bottom" constant="-5" id="ymo-qm-WV1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0fF-mG-IPp"/>
+                    <connections>
+                        <outlet property="button1" destination="iKt-dY-5dq" id="9nh-gL-dJD"/>
+                        <outlet property="button2" destination="lI9-yQ-YPV" id="vl6-fT-wg9"/>
+                        <outlet property="button3" destination="Y6u-o6-goU" id="Vzu-e8-Qxl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1123" y="76"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eRx-04-m6g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FPe-TE-9E4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JYt-eR-9ZG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lQG-vQ-uzQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AdQ-Sx-NQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
