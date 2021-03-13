@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI9-yQ-YPV" userLabel="Button2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI9-yQ-YPV" userLabel="Button2">
                                 <rect key="frame" x="107" y="230" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6u-o6-goU" userLabel="Button3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6u-o6-goU" userLabel="Button3">
                                 <rect key="frame" x="107" y="360" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                             </button>
@@ -37,7 +37,7 @@
                             <constraint firstItem="iKt-dY-5dq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XZj-0R-TZt"/>
                             <constraint firstItem="Y6u-o6-goU" firstAttribute="centerX" secondItem="lI9-yQ-YPV" secondAttribute="centerX" id="cRs-Bq-FsC"/>
                             <constraint firstItem="lI9-yQ-YPV" firstAttribute="centerX" secondItem="iKt-dY-5dq" secondAttribute="centerX" id="gHK-lQ-0gY"/>
-                            <constraint firstItem="lI9-yQ-YPV" firstAttribute="top" secondItem="iKt-dY-5dq" secondAttribute="bottom" constant="-5" id="ymo-qm-WV1"/>
+                            <constraint firstItem="lI9-yQ-YPV" firstAttribute="top" secondItem="iKt-dY-5dq" secondAttribute="bottom" constant="30" id="ymo-qm-WV1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0fF-mG-IPp"/>
